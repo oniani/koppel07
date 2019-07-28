@@ -135,7 +135,7 @@ def write_organized(
             file.write("\n")
 
         with open("ground-truth.json", "w") as file:
-            json.dump({"ground_truth": ground_truth}, file, indent=2)
+            json.dump({"ground-truth": ground_truth}, file, indent=2)
             file.write("\n")
 
 
@@ -188,7 +188,7 @@ def main() -> None:
     # Write
     print("Creating new files, writing the data, and generating meta files...")
     write_organized(normalized_2015, FILENAME_2015, prefix="2015")
-    write_organized(normalized_2016, FILENAME_2016, prefix="2016")
+    write_organized(normalized_2017, FILENAME_2017, prefix="2016")
     write_organized(normalized_2017, FILENAME_2017, prefix="2017", known=False)
     print("Done!")
 
